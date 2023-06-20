@@ -1,0 +1,127 @@
+.container{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.formContainer{
+    padding: 50px;
+    margin: 50px;
+    width: fit-content;
+    border: 1px solid silver;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.header{
+    margin-bottom: 40px;
+    color:#1a73e8;
+    font-size: 1.8rem;
+    text-align: left;
+}
+.formFild{
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    margin-bottom: 10px;
+}
+.formFild span{
+    margin-top: 5px;
+    height: 10px;
+    text-align: left;
+    font-size: 0.7rem;
+    width: fit-content;
+    color: red;
+    padding: 2px 3px;
+    line-height: 10px;
+    border-radius: 3px;
+    background-color: rgba(255,0,0,0.175);
+}
+input[type="checkbox"]{
+    appearance: none;
+    height: 18px;
+    width: 18px;
+    border: 1px solid #1a73e8;
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+    margin-left: 20px;
+}
+input[type="checkbox"]:checked{
+    width: 18px;
+    height: 18px;
+    background-color: #1a73e8;
+    border-radius: 50%;
+}
+input[type="checkbox"]:focus{
+    width: 18px;
+    height: 18px;
+    /*background-color: #004aaa;*/
+    outline: none;
+
+
+}
+.formFild:nth-child(6){
+    color: #1a73e8;
+}
+.formInput{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 10px;
+    border: 1px solid silver;
+    transition:all 0.2s ease-in;
+}
+.uncompleted{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 10px;
+    transition:all 0.2s ease-in;
+    border: 1px solid red;
+}
+.formInput:focus,.uncompleted:focus{
+    line-height: 30px;
+    outline: none;
+    height: 30px;
+    border:1px solid #1a73e8 ;
+}
+.formButtons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.formButtons button{
+    background-color: #1a73e8;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+.formButtons button:hover{
+    background-color: #004aaa;
+}
+.formButtons a{
+    color:#1a73e8;
+    text-decoration: none;
+    transition: all 0.1s ease-in;
+    font-weight: 700;
+
+}
+.formButtons a:hover{
+    color:#004aaa;
+}
+.checkboxContainer{
+    display: flex;
+    font-size: 0.857rem;
+    flex-direction: row !important;
+    align-items: center;
+    height: 20px !important;
+    text-align: center;
+
+}

@@ -17,7 +17,7 @@ export  const validation=data=>{
 
     if (!data.password){
         errors.password="Enter Your Password"
-    }else if (data.password<6){
+    }else if (data.password.length <6){
         errors.password="Please Enter More Than 6 Digit " ;
     }else {
         delete errors.password;
