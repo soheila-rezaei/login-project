@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45e451a2-a4ef-470d-b5b7-afe3bc08fb05" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/log-in.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login/src/Components/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/login/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/App.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/Components/Signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/Components/Signin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/Components/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/Components/validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +48,9 @@
       <option name="presentableId" value="Default" />
       <updated>1687093088732</updated>
       <workItem from="1687093090263" duration="1967000" />
+      <workItem from="1687164028496" duration="10441000" />
+      <workItem from="1687245080537" duration="15301000" />
+      <workItem from="1687351866905" duration="3803000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import {validation} from "./validation";
 import {notify} from "./toast";
+import {Link} from "react-router-dom";
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -12,7 +13,7 @@ const Signin = () => {
         email:"",
         password:"",
         confirmPassword:"",
-        isAccepted:"false",
+        isAccepted:false,
     })
     const changeHandler=event=>{
        if (event.target.name==="isAccepted"){
@@ -31,7 +32,7 @@ const Signin = () => {
 
         event.preventDefault();
         if (!Object.keys(errors).length){
-            notify("you sign in successfully","success")
+            notify("you sign un successfully","success")
         }else{
             notify("invalid data","error")
             setTouch({
@@ -45,14 +46,14 @@ const Signin = () => {
     }
 
     useEffect(()=>{
-        setErrors(validation(data))
-    },[data]);
+        setErrors(validation(data,"signin"))
+    },[data,touch]);
 
 
     return (
         <div className={styles.container}>
             <form  onSubmit={submitHandler} className={styles.formContainer}>
-                <h2 className={styles.header}>SignIn</h2>
+                <h2 className={styles.header}>SignUp</h2>
                 <div className={styles.formFild}>
                     <label>Please Enter Your Name</label>
                     <input className={(errors.name && touch.name)?  styles.uncompleted : styles.formInput}
@@ -86,7 +87,7 @@ const Signin = () => {
 
                 </div>
                 <div className={styles.formButtons}>
-                    <a href="app">LogIn</a>
+                    <Link  to="/login">LogIn</Link>
                     <button type="submit">SignUp</button>
                 </div>
                 <ToastContainer/>

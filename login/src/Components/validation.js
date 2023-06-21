@@ -1,11 +1,5 @@
-export  const validation=data=>{
+export  const validation=(data,type)=>{
     const errors={};
-
-    if (!data.name.trim()){
-        errors.name="Please Insert Your FirstName";
-    }else{
-        delete errors.name;
-    }
 
     if (!data.email){
         errors.email="Please Insert Your Email";
@@ -22,19 +16,33 @@ export  const validation=data=>{
     }else {
         delete errors.password;
     }
-    if (!data.confirmPassword){
-        errors.confirmPassword="Please Confirm Your Password";
-    }else if (data.confirmPassword !== data.password){
-        errors.confirmPassword="Password Do Not Match";
-    }else {
-        delete errors.confirmPassword;
-    }
+   if (type==="signin"){
 
-    if (data.isAccepted){
-        delete errors.isAccepted;
-    }else{
-        errors.isAccepted="Please Choose This Item"
-    }
+        if (!data.name.trim()){
+            errors.name="Please Insert Your FirstName";
+        }else{
+            delete errors.name;
+        }
+
+       if (!data.confirmPassword){
+           errors.confirmPassword="Please Confirm Your Password";
+       }else if (data.confirmPassword !== data.password){
+           errors.confirmPassword="Password Do Not Match";
+       }else {
+           delete errors.confirmPassword;
+       }
+
+       if (data.isAccepted){
+           delete errors.isAccepted;
+       }else{
+           errors.isAccepted="Please Choose This Item"
+       }
+
+
+
+   }
+
+
     return errors
 
 }
